@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="24506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="MenuCollectionViewCell" customModule="RestaurantApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="472" height="257"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="472" height="257"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="khz-hz-gKl">
+                        <rect key="frame" x="0.0" y="0.0" width="472" height="207"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dmx-f1-4bj">
+                        <rect key="frame" x="0.0" y="207" width="472" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="ofw-yM-yyh"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="dmx-f1-4bj" secondAttribute="trailing" id="3e0-dm-vNg"/>
+                <constraint firstItem="khz-hz-gKl" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="DHp-nv-fjA"/>
+                <constraint firstItem="dmx-f1-4bj" firstAttribute="top" secondItem="khz-hz-gKl" secondAttribute="bottom" id="HOM-gX-Fqu"/>
+                <constraint firstAttribute="trailing" secondItem="khz-hz-gKl" secondAttribute="trailing" id="UhW-Vr-dX1"/>
+                <constraint firstItem="dmx-f1-4bj" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="YHa-l1-SLT"/>
+                <constraint firstItem="khz-hz-gKl" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="gLa-kg-Zan"/>
+                <constraint firstAttribute="bottom" secondItem="dmx-f1-4bj" secondAttribute="bottom" id="xu3-QG-T7C"/>
+            </constraints>
+            <size key="customSize" width="472" height="257"/>
+            <connections>
+                <outlet property="dishNameLabel" destination="dmx-f1-4bj" id="Aeq-Gt-2Pz"/>
+                <outlet property="dishesImageView" destination="khz-hz-gKl" id="rqQ-lH-NJ6"/>
+            </connections>
+            <point key="canvasLocation" x="436.64122137404576" y="220.77464788732397"/>
+        </collectionViewCell>
+    </objects>
+</document>
